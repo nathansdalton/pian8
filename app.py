@@ -5,8 +5,9 @@ import dash_bootstrap_components as dbc
 # Initialize the Dash app
 app = dash.Dash(__name__, external_stylesheets=[
     dbc.themes.BOOTSTRAP,
-    "https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap"  # Jost is very similar to Futura
-])
+    "https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap",  # Jost is very similar to Futura
+],
+                title="Pian8")
 
 # Custom styles
 custom_style = {
