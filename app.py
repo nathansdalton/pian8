@@ -2,12 +2,36 @@ import dash
 from dash import html, dcc
 import dash_bootstrap_components as dbc
 
+# Custom HTML template with meta description
+custom_index_string = '''
+<!DOCTYPE html>
+<html>
+    <head>
+        {%metas%}
+        <title>{%title%}</title>
+        {%favicon%}
+        {%css%}
+        <meta name="description" content="Join live piano performances on Twitch. Experience beautiful music and support the artist through donations.">
+    </head>
+    <body>
+        {%app_entry%}
+        <footer>
+            {%config%}
+            {%scripts%}
+            {%renderer%}
+        </footer>
+    </body>
+</html>
+'''
+
+
 # Initialize the Dash app
 app = dash.Dash(__name__, external_stylesheets=[
     dbc.themes.BOOTSTRAP,
     "https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap",  # Jost is very similar to Futura
 ],
-                title="Pian8")
+                title="Pian8",
+               index_string=custom_index_string)
 
 # Custom styles
 custom_style = {
