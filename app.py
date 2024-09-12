@@ -11,7 +11,7 @@ custom_index_string = '''
         <title>{%title%}</title>
         {%favicon%}
         {%css%}
-        <meta name="description" content="Join live piano performances on Twitch. Experience beautiful music and support the artist through donations.">
+        <meta name="description" content="Piano livestreams for brain cancer!">
     </head>
     <body>
         {%app_entry%}
