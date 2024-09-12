@@ -29,10 +29,10 @@ app.layout = dbc.Container([
                     className="text-center mt-4 mb-4",
                     style={'fontFamily': "'Jost', sans-serif", 'fontWeight': '400'}),
             html.Div([
-                dbc.Button("Watch on Twitch", color="dark", className="me-3", href="https://www.twitch.tv/pian8"),
-                dbc.Button("Donate", color="dark", className="me-3", href="https://www.justgiving.com/page/pian8"),
+                dbc.Button("Watch on Twitch", color="dark", className="mb-3 w-100", href="https://www.twitch.tv/pian8"),
+                dbc.Button("Donate", color="dark", className="mb-3 w-100", href="https://www.justgiving.com/page/pian8"),
                 dbc.Button("Song List", color="dark", href="https://www.streamersonglist.com/t/pian8/songs"),
-            ], className="d-flex justify-content-center")
+            ], className="d-flex flex-column align-items-center"), style={"max-width": "200px", "margin": "0 auto"}
         ], width=8, className="mx-auto")
     ])
 ], fluid=True)
